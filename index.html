@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro-container" class="intro-container fade-in">
+        <h1>Welcome to the Quiz Game!</h1>
+        <p>Here are the instructions:</p>
+        <ul>
+            <li>The quiz consists of 15 questions.</li>
+            <li>You will have 90 seconds to answer each question.</li>
+            <li>Choose the correct answer from the options provided.</li>
+            <li>Click 'Start Quiz' to begin.</li>
+        </ul>
+        <button id="start-quiz" class="start-button" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-container" class="quiz-container fade-in" style="display: none;">
+        <h1>Quiz Game</h1>
+        <div class="question-container">
+            <div id="question"></div>
+            <div id="timer">90</div>
+            <div id="answers"></div>
+        </div>
+        <button id="next-button" class="next-button" onclick="nextQuestion()" disabled>Next</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
